@@ -1,0 +1,10 @@
+Allow Null
+Challenge - endDate
+Challenge - statusChallenge
+Submission - getReward
+Submission - statusSubmission
+
+Default Values
+Challenge - statusChallenge -> active (active / ending)
+Submission - getReward -> 0
+Submission - statusSubmission -> wait (wait / approved / rejected)
