@@ -22,7 +22,11 @@ module.exports = {
       },
       SubmissionId: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Submissions',
+          key: 'id'
+        },
       },
       createdAt: {
         allowNull: false,

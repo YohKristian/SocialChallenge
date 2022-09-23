@@ -11,6 +11,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Submission.belongsTo(models.User)
+      Submission.belongsTo(models.Challenge)
+      Submission.hasOne(models.SubmissionStat)
     }
   }
   Submission.init({

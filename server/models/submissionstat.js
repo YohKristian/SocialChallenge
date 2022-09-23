@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      SubmissionStat.belongsTo(models.Submission)
     }
   }
   SubmissionStat.init({
