@@ -7,6 +7,16 @@ const authorizeByInitiator = async (req, res, next) => {
     }
 }
 
+const authorizeByParticipant = async (req, res, next) => {
+    try {
+        if (req.user.role !== "Participant") throw { code: 403, error: "Participant role only!" };
+        next();
+    } catch (error) {
+        next(error);
+    }
+}
+
 module.exports = {
     authorizeByInitiator,
+    authorizeByParticipant
 };
