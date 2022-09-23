@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Challenge.belongsTo(models.User)
+      Challenge.hasMany(models.Submission)
     }
   }
   Challenge.init({

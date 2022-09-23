@@ -10,11 +10,19 @@ module.exports = {
       },
       UserId: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Users',
+          key: 'id'
+        },
       },
       ChallengeId: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Challenges',
+          key: 'id'
+        },
       },
       url: {
         allowNull: false,
