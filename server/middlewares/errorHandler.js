@@ -21,6 +21,11 @@ function errorHandler(error, req, res, next) {
             message: "Unauthorized",
             error: error.error
         })
+    } else if (error.code === 403) {
+        res.status(403).json({
+            message: "Forbidden",
+            error: error.error
+        })
     } else {
         res.status(500).json({
             message: "Internal Server Error",
