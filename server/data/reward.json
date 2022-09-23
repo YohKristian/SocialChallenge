@@ -1,0 +1,37 @@
+[
+  {
+    "tier": 1,
+    "view": 100,
+    "reward": 50000
+  },
+  {
+    "tier": 2,
+    "view": 500,
+    "reward": 75000
+  },
+  {
+    "tier": 3,
+    "view": 2500,
+    "reward": 95000
+  },
+  {
+    "tier": 4,
+    "view": 5000,
+    "reward": 110000
+  },
+  {
+    "tier": 5,
+    "view": 8000,
+    "reward": 145000
+  },
+  {
+    "tier": 6,
+    "view": 10000,
+    "reward": 175000
+  },
+  {
+    "tier": 7,
+    "view": 12500,
+    "reward": 210000
+  }
+]
